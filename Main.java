@@ -53,7 +53,7 @@ public class Main {
 
         System.out.println("------------------Exercise 5-------------------------------");
 //-----------------------------Exercise 5---------------------------------
-int num2=0,equals=0;
+        int num2=0,equals=0;
         int [] ar=new int[3];
 
         System.out.println("Please Enter 3 Integer number: ");
@@ -80,7 +80,7 @@ int num2=0,equals=0;
 
         System.out.println("------------------Exercise 7-------------------------------");
 //-----------------------------Exercise 7---------------------------------
-    System.out.println("Enter number to check is it eveb or odd");
+        System.out.println("Enter number to check is it eveb or odd");
         int evod=input.nextInt();
         System.out.println("The number is "+ evod);
         if (evod%2==0){System.out.println("The number is Even");}
@@ -118,7 +118,7 @@ int num2=0,equals=0;
         System.out.println("Area is: "+width+"*"+height+"="+(width*height));
         System.out.println("Perimeter is: ("+width+"+"+height+")*2="+(2*(width+height)));
 
-  System.out.println("------------------Exercise 11-------------------------------");
+        System.out.println("------------------Exercise 11-------------------------------");
 //-----------------------------Exercise 11---------------------------------
 
         System.out.println("Frist number: ");
@@ -138,7 +138,7 @@ int num2=0,equals=0;
         }
 
 
-      System.out.println("------------------Exercise 12-------------------------------");
+        System.out.println("------------------Exercise 12-------------------------------");
 //-----------------------------Exercise 12---------------------------------
         System.out.println("Enter second: ");
         int seconds = input.nextInt();
@@ -160,7 +160,7 @@ int num2=0,equals=0;
             System.out.println("Enter 4 Integer: ");
             equNum = input.nextInt();
             if (equNum == check ) {
-               n4++; continue;
+                n4++; continue;
             } else {value = false;break;}
         }
         while (n4 < 4);
@@ -174,9 +174,9 @@ int num2=0,equals=0;
         System.out.println("Enter Integer");
         int readInteger=input.nextInt();
         if(readInteger!=0){
-         if (readInteger<0){System.out.println("Number Is Negative");}
-         else {System.out.println("Number Is Positive");}
-    }        else System.out.println("Number Is Zero");
+            if (readInteger<0){System.out.println("Number Is Negative");}
+            else {System.out.println("Number Is Positive");}
+        }        else System.out.println("Number Is Zero");
 
 
 
@@ -215,24 +215,24 @@ int num2=0,equals=0;
         System.out.println("Enter Number to reverse it ");
         int resNumber = input.nextInt();
         String word8  = Integer.toString(resNumber);
-   //1     stNumber = stNumber.replace(" ", "");
-       // String word8 = input.next();
+        //1     stNumber = stNumber.replace(" ", "");
+        // String word8 = input.next();
         word8 = word8.replace(" ", "");
         for (int pal = word8.length() - 1; pal >= 0; pal--) {
             reserve8 = reserve8 + word8.charAt(pal);}
-            System.out.println("The Number is "+reserve8);
+        System.out.println("The Number is "+reserve8);
 
         System.out.println("------------------Exercise 17-------------------------------");
 ////-----------------------------Exercise 17----------------------------
-    int largest=0, smallest=0, readNum;
-    boolean tilUser=true;
+        int largest=0, smallest=0, readNum;
+        boolean tilUser=true;
         do {
             System.out.println("Please Enter any Number to get smallest and largest ,exit -1 ");
             readNum = input.nextInt();
             if(readNum!=-1){
-            if(readNum>largest){
-                largest=readNum;}
-            else {smallest=readNum;}}
+                if(readNum>largest){
+                    largest=readNum;}
+                else {smallest=readNum;}}
             else {smallest=readNum;tilUser=false;}
 
         } while (tilUser);
